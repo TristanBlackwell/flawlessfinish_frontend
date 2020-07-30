@@ -325,11 +325,56 @@ body {
 }
 
 #flawlessTeam {
-  padding-top: 5rem;
+  padding-top: 7.5rem;
+}
+
+#flawlessTeam h6,
+#flawlessTeam h3 {
+  font-family: "Playfair Display";
+}
+
+#flawlessTeam h6 {
+  color: #f06873;
 }
 
 #flawlessTeam h3 {
+  margin-top: 0;
+}
+
+#teamCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.memberCard {
+  margin: 10%;
+  width: 30%;
+}
+
+.memberRole,
+.memberName {
+  width: 50%;
+  margin: auto;
+}
+
+.memberRole {
+  color: #f06873;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.memberName {
+  padding-bottom: 2rem;
   font-family: "Playfair Display";
+}
+
+.memberDescription {
+  width: 90%;
+  margin: auto;
 }
 
 #servicesPage {
@@ -880,6 +925,16 @@ footer ul li {
   }
   #ourSalon {
     padding-left: 15vw;
+  }
+
+  #teamCards {
+    width: 100%;
+  }
+
+  .memberCard {
+    margin: 0;
+    width: 65%;
+    margin-bottom: 3rem;
   }
 
   .wellnessCard .row .col {

@@ -175,8 +175,42 @@ class About extends Component {
           </Slider>
         </div>
         <div id="flawlessTeam">
-          <h3 className="center">Meet the Flawless Team</h3>
-          <p className="center">...</p>
+          <h6 className="center">The Flawless Team</h6>
+          <h3 className="center">Meet our lovely Ladies</h3>
+          <div id="teamCards">
+            <div className="memberCard">
+              <div className="memberImg">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                  alt="portrait"
+                  height="500px"
+                  width="100%"
+                ></img>
+              </div>
+              <p className="memberRole center">Role</p>
+              <h5 className="memberName center">Member Name</h5>
+              <div className="memberDescription center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div className="memberCard">
+              <div className="memberImg">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                  alt="portrait"
+                  height="500px"
+                  width="100%"
+                ></img>
+              </div>
+              <p className="memberRole center">Role</p>
+              <h5 className="memberName center">Member Name</h5>
+              <div className="memberDescription center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
         </div>
         <footer className="page-footer" id="aboutFooter" data-aos="fade-up">
           <div className="container">
