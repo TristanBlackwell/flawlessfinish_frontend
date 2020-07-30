@@ -331,6 +331,8 @@ body {
 #flawlessTeam h6,
 #flawlessTeam h3 {
   font-family: "Playfair Display";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #flawlessTeam h6 {
@@ -530,6 +532,9 @@ body {
   margin-top: 4rem;
 }
 
+#wellnessPage {
+  background-color: #fffcf2;
+}
 #wellnessHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url("./images/wellnessBannerCentre.jpg");
