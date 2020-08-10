@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-// Get all treatment categories
+// Get all hair treatment categories
 const CATEGORIES_QUERY = gql`
   query Categories {
     categories {

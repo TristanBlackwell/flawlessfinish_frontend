@@ -11,4 +11,6 @@ const client = new ApolloClient({
   link,
 });
 
+// Connect Strapi with GraphQL to the react frontend.
+
 export default client;
