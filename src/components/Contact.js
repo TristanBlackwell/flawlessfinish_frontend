@@ -4,12 +4,41 @@ import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
+
   componentDidMount() {
     M.Sidenav.init(this.Sidenav);
 
     M.Sidenav.getInstance(this.Sidenav);
   }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+
   render() {
+    const { status } = this.state;
     return (
       <div id="contactPage">
         <div className="navContainer" id="contactNavigation">
@@ -123,7 +152,12 @@ class Contact extends Component {
         <div id="contactFormContainer" data-aos="zoom-in">
           <div className="container">
             <div className="row">
-              <form className="col s12">
+              <form
+                className="col s12"
+                onSubmit={this.submitForm}
+                action="https://formspree.io/xnqgrpyw"
+                method="POST"
+              >
                 <div className="row">
                   <div className="input-field col s12">
                     <input id="full_name" type="text" className="validate" />
@@ -151,12 +185,17 @@ class Contact extends Component {
 
                 <div className="row center">
                   <div className="input-field s12">
-                    <input
-                      type="submit"
-                      id="submitForm"
-                      value="Send"
-                      className="waves-effect waves-light btn-large"
-                    />
+                    {status === "SUCCESS" ? (
+                      <p>Thanks!</p>
+                    ) : (
+                      <input
+                        type="submit"
+                        id="submitForm"
+                        value="Send"
+                        className="waves-effect waves-light btn-large"
+                      />
+                    )}
+                    {status === "ERROR" && <p>Ooops! There was an error.</p>}
                   </div>
                 </div>
               </form>
