@@ -16,6 +16,7 @@ class Contact extends Component {
     M.Sidenav.init(this.Sidenav);
 
     M.Sidenav.getInstance(this.Sidenav);
+    this.setState({ status: "" });
   }
 
   submitForm(ev) {
@@ -157,28 +158,49 @@ class Contact extends Component {
                 onSubmit={this.submitForm}
                 action="https://formspree.io/xnqgrpyw"
                 method="POST"
+                encType="multipart/form-data"
               >
                 <div className="row">
                   <div className="input-field col s12">
-                    <input id="full_name" type="text" className="validate" />
+                    <input
+                      id="full_name"
+                      type="text"
+                      className="validate"
+                      name="full_name"
+                    />
                     <label htmlFor="full_name">Full Name</label>
                   </div>
                 </div>
                 <div className="row">
                   <div className="input-field col s6">
-                    <input id="email" type="email" className="validate" />
+                    <input
+                      id="email"
+                      type="email"
+                      className="validate"
+                      name="email"
+                    />
                     <label htmlFor="email">Email</label>
                   </div>
 
                   <div className="input-field col s6">
-                    <input id="phoneNumber" type="text" className="validate" />
+                    <input
+                      id="phoneNumber"
+                      type="text"
+                      className="validate"
+                      name="phone_number"
+                    />
                     <label htmlFor="phoneNumber">Phone number</label>
                   </div>
                 </div>
 
                 <div className="row">
                   <div className="input-field col s12">
-                    <textarea id="textarea" type="email" className="validate" />
+                    <textarea
+                      id="textarea"
+                      type="email"
+                      className="validate"
+                      name="message"
+                    />
                     <label htmlFor="textarea"> How can we help?</label>
                   </div>
                 </div>
@@ -188,12 +210,14 @@ class Contact extends Component {
                     {status === "SUCCESS" ? (
                       <p>Thanks!</p>
                     ) : (
-                      <input
+                      <button
                         type="submit"
                         id="submitForm"
                         value="Send"
                         className="waves-effect waves-light btn-large"
-                      />
+                      >
+                        Send
+                      </button>
                     )}
                     {status === "ERROR" && <p>Ooops! There was an error.</p>}
                   </div>
