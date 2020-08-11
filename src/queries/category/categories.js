@@ -5,12 +5,12 @@ const CATEGORIES_QUERY = gql`
   query Categories {
     categories {
       id
-      name
+      Name
       treatments {
         id
-        name
-        stylist_price
-        senior_stylist_price
+        Name
+        Stylist_price
+        Senior_stylist_price
       }
     }
   }
