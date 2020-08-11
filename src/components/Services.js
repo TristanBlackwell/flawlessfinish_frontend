@@ -145,7 +145,7 @@ class Services extends Component {
                         return (
                           <div key={category.id} className="treatmentCard">
                             <div className="priceTitle">
-                              <span className="priceHead">{category.name}</span>
+                              <span className="priceHead">{category.Name}</span>
                               <span className="stylists">
                                 Junior Stylist | Senior stylist
                               </span>
