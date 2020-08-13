@@ -185,9 +185,10 @@ class Services extends Component {
           <div id="bookingtext">
             <p id="covidAlert">
               As a result of current Covid-19 guidelines we are not taking
-              online bookings presently. Please <a href="#!">contact us</a> or
-              give us a ring to book an appointment. We aim to be restart online
-              booking as soon as possible. Thank you
+              online bookings presently. Please{" "}
+              <NavLink to="/contact">contact us</NavLink> or give us a ring to
+              book an appointment. We aim to be restart online booking as soon
+              as possible. Thank you
             </p>
             <p className="black-text">
               Not all our services are listed within online booking so if you

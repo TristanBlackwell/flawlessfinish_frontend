@@ -142,7 +142,12 @@ class About extends Component {
             Bampton, we have re-opened as Flawless Finish under the guidance of
             Katie who was previously Polished Hair Salon's Manager.
             <br />{" "}
-            <a href="https://www.polishedsalon.co.uk/" id="polishedLink">
+            <a
+              href="https://www.polishedsalon.co.uk/"
+              id="polishedLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Keeping strong ties with Polished we still highly recommend them
               for your beauty needs.
             </a>{" "}

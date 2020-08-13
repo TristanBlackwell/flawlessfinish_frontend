@@ -250,7 +250,13 @@ class Contact extends Component {
         </div>
         <div className="row" id="contactFooter">
           <div className="col s12 m6" id="mapContainer" data-aos="flip-left">
-            <div id="map"></div>
+            <a
+              href="https://www.google.co.uk/maps/place/Polished+Hair+Salon/@51.7266328,-1.5483099,17z/data=!3m1!4b1!4m5!3m4!1s0x487135c92c7b5c35:0x78739b34dfdac998!8m2!3d51.7266295!4d-1.5461212?hl=en-GB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="map"></div>
+            </a>
           </div>
           <div className="col s12 m6" id="contactBottom" data-aos="flip-right">
             <div className="container center">

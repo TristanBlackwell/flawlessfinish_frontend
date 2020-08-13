@@ -255,7 +255,7 @@ body {
 
 #ourSalonLink {
   color: black;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 2px;
   box-shadow: 3px black;
   transition-duration: 1s;

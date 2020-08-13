@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,15 +25,17 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <ApolloProvider client={client}>
-            <Switch>
-              <Route path="/" component={Landing} exact />
-              <Route path="/about" component={About} />
-              <Route path="/services" component={Services} />
-              <Route path="/wellness-rooms" component={WellnessRooms} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
-          </ApolloProvider>
+          <ScrollToTop>
+            <ApolloProvider client={client}>
+              <Switch>
+                <Route path="/" component={Landing} exact />
+                <Route path="/about" component={About} />
+                <Route path="/services" component={Services} />
+                <Route path="/wellness-rooms" component={WellnessRooms} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            </ApolloProvider>
+          </ScrollToTop>
         </BrowserRouter>
       </div>
     );

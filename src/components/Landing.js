@@ -165,7 +165,7 @@ class Landing extends Component {
           <div id="serviceText">
             <h3>A new standard</h3>
             <p>Taking style to a new level only you can dream of</p>
-            <a href="#!">See more</a>
+            <NavLink to="/Services">See more</NavLink>
           </div>
         </div>
         <div id="ourSalon" className="transparent">
@@ -189,9 +189,9 @@ class Landing extends Component {
                 30 minutes spare from your day or a couple of hours.
               </p>
               <span>
-                <button className="btn-flat" id="ourSalonLink">
+                <NavLink to="/About" className="btn-flat" id="ourSalonLink">
                   | Meet the team |
-                </button>
+                </NavLink>
               </span>
             </div>
           </div>
