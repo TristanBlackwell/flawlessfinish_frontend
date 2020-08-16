@@ -7,7 +7,6 @@ import "react-animated-slider/build/horizontal.css";
 
 import icon from "../images/icon.svg";
 import logo from "../images/logo_onwhite.jpg";
-import comingSoon from "../images/comingSoon.png";
 
 import Query from "./Query";
 import MEMBERS_QUERY from "../queries/member/member";
