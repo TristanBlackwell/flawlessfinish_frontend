@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 
 import WellnessCard from "./WellnessCard";
 
+import icon from "../images/icon.svg";
+
 import wellnessTravel from "../images/wellnessTravel.png";
 import acupuncture from "../images/Acupuncture.jpeg";
 import sars from "../images/sars.jpg";
-import sarsResize from "../images/sarsResize.jpg";
 
 class WellnessRooms extends Component {
   render() {
@@ -22,9 +23,9 @@ class WellnessRooms extends Component {
               >
                 <i className="fas fa-bars"></i>
               </a>
-              <a href="#!" className="brand-logo">
-                Logo
-              </a>
+              <NavLink to="/" className="brand-logo">
+                <img src={icon} alt="logo" width="100%" height="100%" />
+              </NavLink>
               <ul className="right hide-on-med-and-down">
                 <li>
                   <NavLink to="/" className="navbarLink" exact>
@@ -164,7 +165,7 @@ If you are wondering if acupuncture is suitable for your needs, Sharon offers th
             link={"https://www.holistichealthtraditions.co.uk/"}
           />
           <WellnessCard
-            img={sarsResize}
+            img={sars}
             title={"SAR Life coaching"}
             content={`As a life coach, I assist people to find the tools to enable them to live their lives to their full potential and to be their ‘best self’. You have the tools and the answers already in you and as a coach I will ask the right questions to enable you to think differently or to see a situation from a different point of view. Unlike counselling or therapy, coaching does not tend to be post crisis and does not focus on the past but looks at ways to move forward.
 

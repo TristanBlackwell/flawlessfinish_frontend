@@ -50,7 +50,7 @@ class Landing extends Component {
                   <NavLink
                     to="/"
                     exact
-                    style={{ borderBottom: "2px solid #efc3e6" }}
+                    style={{ borderBottom: "2px solid #b66c6d" }}
                   >
                     Home
                   </NavLink>
@@ -144,9 +144,12 @@ class Landing extends Component {
           <div id="landingHeroContent">
             <h1>Your Beauty, Pronouced</h1>
             <p>salon // Bampton</p>
-            <a href="#!" className="waves-effect waves-light btn-large">
+            <NavLink
+              to="/services"
+              className="waves-effect waves-light btn-large"
+            >
               Book Flawless
-            </a>
+            </NavLink>
           </div>
         </div>
 

@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 
+import icon from "../images/icon.svg";
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -52,9 +54,9 @@ class Contact extends Component {
               >
                 <i className="fas fa-bars"></i>
               </a>
-              <a href="#!" className="brand-logo">
-                Logo
-              </a>
+              <NavLink to="/" className="brand-logo">
+                <img src={icon} alt="logo" width="100%" height="100%" />
+              </NavLink>
               <ul className="right hide-on-med-and-down">
                 <li>
                   <NavLink to="/" className="navbarLink" exact>

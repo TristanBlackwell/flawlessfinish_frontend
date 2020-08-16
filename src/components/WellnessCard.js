@@ -14,6 +14,7 @@ class WellnessCard extends Component {
               className="wellnessCardImg"
             />
           </div>
+          // eslint-disable-next-line
           <div className="col l8 m12 s12" className="wellnessCardText">
             <h3 className="wellnessCardTitle">{this.props.title}</h3>
             <p className="wellnessCardContent">{this.props.content}</p>

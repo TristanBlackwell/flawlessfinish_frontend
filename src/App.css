@@ -1,10 +1,20 @@
+@font-face {
+  font-family: PrestigeElite;
+  src: url(./fonts/prestigeelitestd-bd.otf);
+}
+
+@font-face {
+  font-family: Betty Lavea;
+  src: url(./fonts/BettyLavea.ttf);
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans", sans-serif;
-  max-width: 100%;
+  font-family: "PrestigeElite", sans-serif;
+  min-width: 100%;
 }
 
 .no-shadows {
@@ -23,7 +33,7 @@ body {
 
 #Landing,
 #mobile-demo {
-  background-color: #93a85c;
+  background-color: #d4d6d4;
 }
 
 #landingHero {
@@ -41,7 +51,7 @@ body {
 .sidenav {
   font-family: "Playfair Display";
   text-transform: uppercase;
-  color: #dedddb;
+  color: white;
   padding-top: 5vh;
   font-size: 1.5rem;
 }
@@ -65,20 +75,24 @@ body {
 #landingHero nav ul li .landingNavbarLink:hover {
   transform: scale(1.1);
   transition: none;
-  border-bottom: 2px solid #fbcbc9;
+  border-bottom: 2px solid #b66c6d;
 }
 
 #landingHero nav ul li i:hover {
   transform: scale(1.2);
-  color: #fbcbc9;
+  color: #b66c6d;
 }
 
 .socialMobileLink {
   transform: scale(1.5);
 }
 
+.brand-logo {
+  height: 100%;
+}
+
 .navContainer {
-  background-color: #93a85c;
+  background-color: #646566;
   padding-right: 3%;
 }
 
@@ -93,18 +107,18 @@ body {
 }
 
 .navbarLink:hover {
-  color: #fbcbc9;
+  color: #f4dad2;
 }
 
 .navContainer nav ul li i:hover {
-  color: #fbcbc9;
+  color: #b66c6d;
 }
 
 .aboutLink,
 .serviceLink,
 .contactLink,
 .wellnessLink {
-  color: #fbcbc9;
+  color: #f4dad2;
 }
 
 #landingHeroContent {
@@ -113,38 +127,37 @@ body {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #dedddb;
+  color: white;
 }
 
 #landingHeroContent h1 {
   font-weight: 400;
   font-size: 6rem;
-  margin-bottom: -2rem;
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
 }
 
 #landingHeroContent p {
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-family: "Cormorant Garamond";
+  font-family: "PrestigeElite";
 }
 
 #landingHeroContent .btn-large {
-  border: 3px solid #fbcbc9;
+  border: 3px solid #b66c6d;
   border-radius: 10px;
   background-color: transparent;
-  font-family: "Fira Sans";
+  font-family: "PrestigeElite";
   font-size: 1.2rem;
 }
 
 #reviewSummary {
   padding-top: 2vh;
   padding-bottom: 3vh;
-  background-color: #fffcf2;
+  background-color: white;
 }
 
 #Landing .slider {
-  background-color: #fffcf2;
+  background-color: white;
   height: 275px !important;
 }
 
@@ -174,10 +187,10 @@ body {
 
 #reviewsButton {
   margin: 0 1rem;
-  border-bottom: 3px solid #fbcbc9;
+  border-bottom: 3px solid #b66c6d;
   box-shadow: none;
   background-color: transparent;
-  font-family: "Fira Sans";
+  font-family: "PrestigeElite";
   font-size: 1.2rem;
 }
 
@@ -195,7 +208,7 @@ body {
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Playfair Display";
+  font-family: "Betty Lavea";
 }
 
 #serviceText {
@@ -210,12 +223,12 @@ body {
 
 #serviceText p {
   font-size: 1.5rem;
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
 }
 
 #serviceText a {
   color: white;
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
   font-size: 1.5rem;
   text-decoration: underline;
   text-decoration-color: #f06873;
@@ -241,7 +254,7 @@ body {
 
 #ourSalonTitle {
   color: black;
-  font-family: "Playfair Display";
+  font-family: "Betty Lavea";
   letter-spacing: 1px;
   font-weight: 800;
 }
@@ -254,8 +267,8 @@ body {
 }
 
 #ourSalonLink {
-  color: black;
-  font-weight: bold;
+  color: #b66c6d;
+  font-weight: bold !important;
   letter-spacing: 2px;
   box-shadow: 3px black;
   transition-duration: 1s;
@@ -266,7 +279,7 @@ body {
 }
 
 #aboutPage {
-  background-color: #fffcf2;
+  background-color: white;
 }
 
 #aboutHero,
@@ -285,15 +298,17 @@ body {
 #aboutHero h1,
 #servicesHero h1,
 #wellnessHero h1 {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
   position: absolute;
   width: 50%;
-  font-size: 6rem;
-  color: #fffcf2;
+  font-size: 5rem;
+  padding-top: 2rem;
+  color: white;
 }
 
 #aboutFlawless {
-  padding-top: 5rem;
+  width: 55%;
+  margin: auto;
 }
 
 #aboutFlawless div {
@@ -302,7 +317,7 @@ body {
 }
 
 #aboutFlawless h3 {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: "Playfair Display";
 }
 
@@ -330,17 +345,20 @@ body {
 
 #flawlessTeam h6,
 #flawlessTeam h3 {
-  font-family: "Playfair Display";
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
 #flawlessTeam h6 {
-  color: #f06873;
+  font-family: "PrestigeElite";
+  color: #b66c6d;
+  font-size: 1.5rem;
 }
 
 #flawlessTeam h3 {
-  margin-top: 0;
+  font-family: "Betty Lavea";
+  margin-top: 2rem;
+  font-size: 5rem;
 }
 
 #teamCards {
@@ -363,7 +381,7 @@ body {
 }
 
 .memberRole {
-  color: #f06873;
+  color: #b66c6d;
   font-size: 1rem;
   padding-top: 1rem;
   font-weight: bold;
@@ -373,7 +391,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 2rem;
-  font-family: "Playfair Display";
+  font-family: "Betty Lavea";
 }
 
 .memberDescription {
@@ -382,13 +400,13 @@ body {
 }
 
 #servicesPage {
-  background-color: #fffcf2;
+  background-color: white;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 #servicesHeader {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
 }
 
 #servicesHero {
@@ -398,12 +416,13 @@ body {
 }
 
 #servicesHero h1 {
-  font-size: 7.5rem;
+  padding-top: 1rem;
+  font-size: 6rem;
   width: 100%;
 }
 
 #headerUnderline {
-  background-color: #fbcbc9;
+  background-color: #b66c6d;
   width: 3%;
   height: 0.25rem;
   margin: auto;
@@ -412,7 +431,7 @@ body {
 }
 
 #headerUnderlineGreen {
-  background-color: #93a85c;
+  background-color: #b66c6d;
   width: 3%;
   height: 0.25rem;
   margin: auto;
@@ -421,15 +440,15 @@ body {
 }
 
 #polishedLink {
-  color: #f06873;
+  color: #b66c6d;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #f06873;
+  text-decoration-color: #b66c6d;
 }
 
 #servicesHeader p {
   font-size: 1.1rem;
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -440,8 +459,8 @@ body {
 }
 
 #bookingCTA a {
-  background-color: #f06873;
-  font-family: "Playfair Display";
+  background-color: #b66c6d;
+  font-family: "PrestigeElite";
   border-radius: 10px;
   margin-bottom: 3rem;
 }
@@ -465,7 +484,7 @@ body {
 }
 
 .priceTitle {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
   font-weight: bold;
   letter-spacing: 1.5px;
   display: flex;
@@ -476,7 +495,6 @@ body {
 
 .priceHead {
   font-size: 2.5rem;
-  text-decoration: underline;
 }
 
 .stylists {
@@ -486,12 +504,15 @@ body {
 .treatmentName,
 .treatmentPrice,
 .treatmentInfo {
-  font-family: "Playfair Display";
+  font-family: "PrestigeElite";
+  font-weight: bold;
   font-size: 1.15rem;
 }
 
 .treatmentPrice {
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
+  font-weight: bold;
+  color: #b66c6d !important;
 }
 
 .treatmentPrice,
@@ -514,7 +535,7 @@ body {
 
 #bookingHeader h3 {
   margin-top: 3rem;
-  font-family: "Playfair Display";
+  font-family: "Betty Lavea";
   color: black;
   font-weight: 800;
 }
@@ -526,7 +547,7 @@ body {
 }
 
 #bookingtext a {
-  color: #f06873;
+  color: #b66c6d;
   font-weight: 800;
 }
 
@@ -535,7 +556,7 @@ body {
 }
 
 #wellnessPage {
-  background-color: #fffcf2;
+  background-color: white;
 }
 #wellnessHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
@@ -546,7 +567,7 @@ body {
 }
 
 #wellnessHeader h1 {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
 }
 
 #wellnessHeader p {
@@ -582,28 +603,28 @@ body {
 }
 
 .wellnessCardContent {
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
   padding-bottom: 1.5rem;
 }
 
 .wellnessCardBtn {
   width: 15rem;
-  border: 3px solid #93a85c !important;
+  border: 3px solid #b66c6d !important;
   border-radius: 10px !important;
   background-color: transparent !important;
-  font-family: "Fira Sans";
+  font-family: "PrestigeElite";
   font-size: 1.2rem;
   color: black !important;
 }
 
 #wellnessRent {
-  background-color: #93a85c;
+  background-color: #b66c6d;
   font-family: "Playfair Display";
   margin-bottom: 3rem;
 }
 
 #wellnessRent .card-content p {
-  font-family: "Fira sans";
+  font-family: "PrestigeElite";
 }
 
 #wellnessRentLink {
@@ -611,13 +632,13 @@ body {
 }
 
 #contactPage {
-  background-color: #fffcf2;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
 
 #contactHeader {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
   color: black;
 }
 
@@ -628,6 +649,7 @@ body {
 
 #contactHeader h5 {
   font-size: 1.5rem;
+  font-family: "PrestigeElite";
 }
 
 #contactHeader h5 i {
@@ -639,7 +661,7 @@ body {
   margin: auto;
   margin-top: 3rem;
   width: 80%;
-  background-color: #fffcf2;
+  background-color: white;
 }
 
 #contactBottom .container {
@@ -649,24 +671,24 @@ body {
 
 /* label color */
 .input-field label {
-  color: #93a85c !important;
+  color: #b66c6d !important;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: "Playfair Display";
+  font-family: "PrestigeElite";
 }
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: #93a85c !important;
+  color: #b66c6d !important;
 }
 /* label underline focus color */
 .input-field input[type="text"]:focus {
-  border-bottom: 1px solid #93a85c !important;
-  box-shadow: 0 1px 0 0 #93a85c !important;
+  border-bottom: 1px solid #b66c6d !important;
+  box-shadow: 0 1px 0 0 #b66c6d !important;
 }
 /* valid color */
 .input-field input[type="text"].valid {
-  border-bottom: 1px solid #93a85c;
-  box-shadow: 0 1px 0 0 #93a85c;
+  border-bottom: 1px solid #b66c6d;
+  box-shadow: 0 1px 0 0 #b66c6d;
 }
 /* invalid color */
 .input-field input[type="text"].invalid {
@@ -675,18 +697,18 @@ body {
 }
 
 .input-field input[type="email"]:focus + label {
-  color: #93a85c !important;
+  color: #b66c6d !important;
 }
 
 /* label underline focus color */
 .input-field input[type="email"]:focus {
-  border-bottom: 1px solid #93a85c !important;
-  box-shadow: 0 1px 0 0 #93a85c !important;
+  border-bottom: 1px solid #b66c6d !important;
+  box-shadow: 0 1px 0 0 #b66c6d !important;
 }
 /* valid color */
 .input-field input[type="email"].valid {
-  border-bottom: 1px solid #93a85c;
-  box-shadow: 0 1px 0 0 #93a85c;
+  border-bottom: 1px solid #b66c6d;
+  box-shadow: 0 1px 0 0 #b66c6d;
 }
 /* invalid color */
 .input-field input[type="email"].invalid {
@@ -695,53 +717,53 @@ body {
 }
 
 input[type="email"]:not(.browser-default).validate + label {
-  color: #93a85c !important;
+  color: #b66c6d !important;
 }
 
 /* label focus color */
 .input-field input[type="text"]:focus + label,
 .materialize-textarea:focus:not([readonly]) + label {
-  color: #93a85c !important;
+  color: #b66c6d !important;
 }
 
 /* label underline focus color */
 .input-field input[type="text"]:focus,
 .materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #93a85c !important;
-  box-shadow: 0 1px 0 0 #93a85c !important;
+  border-bottom: 1px solid #b66c6d !important;
+  box-shadow: 0 1px 0 0 #b66c6d !important;
 }
 
 .materilize-textarea.validate {
-  color: #93a85c !important;
-  outline-color: #93a85c !important;
+  color: #b66c6d !important;
+  outline-color: #b66c6d !important;
 }
 
 #textarea.validate {
-  outline-color: #93a85c !important;
+  outline-color: #b66c6d !important;
   margin-top: 0.5rem;
   height: 15vh;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #93a85c !important ;
+  color: #b66c6d !important ;
 }
 
 .input-field .btn-large {
   background-color: transparent !important;
-  border: 3px solid #93a85c !important;
+  border: 3px solid #b66c6d !important;
   border-radius: 10px;
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
   font-weight: bold;
   font-size: 1.25rem;
 }
 
 .input-field .btn-large:hover {
-  box-shadow: 0 0 10px #93a85c;
+  box-shadow: 0 0 10px #b66c6d;
 }
 
 #submitForm {
-  color: #93a85c;
-  font-family: "Playfair Display";
+  color: #b66c6d;
+  font-family: "PrestigeElite ";
 }
 
 #conditionsInfo {
@@ -750,7 +772,8 @@ input[type="email"]:not(.browser-default).validate + label {
 }
 
 #conditionsInfo h4 {
-  font-family: "Cormorant Garamond";
+  font-family: "Betty Lavea";
+  padding-bottom: 1.5rem;
 }
 
 #conditionsInfo ul {
@@ -775,7 +798,7 @@ input[type="email"]:not(.browser-default).validate + label {
 }
 
 #contactBottom {
-  background-color: #93a85c;
+  background-color: #646566;
   height: 60vh;
   font-weight: bold;
   font-family: "Playfair Display";
@@ -797,22 +820,23 @@ input[type="email"]:not(.browser-default).validate + label {
 #contactBottom h6 i {
   transform: scale(2.5);
   margin: 2.5rem 3rem;
-  color: #fffcf2;
+  color: white;
 }
 
 #contactBottom h6 i:hover {
   transform: scale(2.6);
+  color: #b66c6d;
 }
 
 #contactBottom button {
-  background-color: black;
-  border: 3px solid black;
+  background-color: #d4d5d4;
+  border: 3px solid #d4d5d4;
   border-radius: 10px;
-  color: #fffcf2;
+  color: #b66c6d;
 }
 
 #contactBottom button:hover {
-  box-shadow: 0 0 10px #fbcbc9;
+  box-shadow: 0 0 10px #b66c6d;
 }
 
 #contactCopyright {
@@ -829,9 +853,9 @@ input[type="email"]:not(.browser-default).validate + label {
 }
 
 footer {
-  font-family: "Fira Sans";
+  font-family: "PrestigeElite";
   color: black;
-  background-color: #fffcf2 !important;
+  background-color: white !important;
 }
 
 footer h5 {
@@ -847,12 +871,17 @@ footer ul li {
 }
 
 .footer-copyright {
-  background-color: #fffcf2 !important;
+  background-color: white !important;
 }
 
 @media only screen and (max-width: 600px) {
   #landingHeroContent {
-    top: 50%;
+    top: 55%;
+    left: 50%;
+  }
+
+  #landingHeroContent h1 {
+    font-size: 5rem;
   }
 
   #reviewSummary {
@@ -865,6 +894,20 @@ footer ul li {
 
   #servicesSummary {
     height: 70vh !important;
+  }
+
+  #serviceText h3 {
+    line-height: 4rem;
+  }
+
+  #serviceText {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #serviceText h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
   }
 
   #ourSalonInfo {
@@ -899,8 +942,24 @@ footer ul li {
     border-radius: 3px;
   }
 
+  #flawlessTeam h3 {
+    line-height: 7.5rem;
+  }
+
+  #teamCards {
+    margin-top: 1rem;
+  }
+
   #servicePricing {
     width: 100%;
+  }
+
+  .priceHead {
+    line-height: 10rem;
+  }
+
+  .stylists {
+    letter-spacing: 3px;
   }
 
   .priceTitle {
@@ -909,6 +968,10 @@ footer ul li {
 
   .priceItem {
     width: 100%;
+  }
+
+  .treatmentPrice {
+    white-space: nowrap;
   }
 
   #bookingtext {

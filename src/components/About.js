@@ -5,6 +5,8 @@ import "materialize-css/dist/css/materialize.min.css";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
+import icon from "../images/icon.svg";
+import logo from "../images/logo_onwhite.jpg";
 import comingSoon from "../images/comingSoon.png";
 
 const slides = [
@@ -34,9 +36,9 @@ class About extends Component {
               >
                 <i className="fas fa-bars"></i>
               </a>
-              <a href="#!" className="brand-logo">
-                Logo
-              </a>
+              <NavLink to="/" className="brand-logo">
+                <img src={icon} alt="logo" width="100%" height="100%" />
+              </NavLink>
               <ul className="right hide-on-med-and-down">
                 <li>
                   <NavLink to="/" className="navbarLink" exact>
@@ -124,7 +126,7 @@ class About extends Component {
           <h1>About Us</h1>
         </div>
         <div id="aboutFlawless" className="center">
-          <div>Logo</div>
+          <img src={logo} alt="logo" width="100%" height="auto" />
           <h3>About Flawless Finish</h3>
           <div id="headerUnderline"></div>
           <div className="container center">
