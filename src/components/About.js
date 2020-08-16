@@ -9,6 +9,10 @@ import icon from "../images/icon.svg";
 import logo from "../images/logo_onwhite.jpg";
 import comingSoon from "../images/comingSoon.png";
 
+import Query from "./Query";
+import MEMBERS_QUERY from "../queries/member/member";
+import MemberCard from "./MemberCard";
+
 const slides = [
   { url: "https://lorempixel.com/250/250/nature/1", alt: "Lorem ipsum" },
   { url: "https://lorempixel.com/250/250/nature/2", alt: "Lorem ipsum" },
@@ -186,89 +190,18 @@ class About extends Component {
         <div id="flawlessTeam">
           <h6 className="center">The Flawless Team</h6>
           <h3 className="center">Meet our lovely Ladies</h3>
-          <div id="teamCards">
-            <div className="memberCard">
-              <div className="memberImg">
-                <img
-                  src={comingSoon}
-                  alt="portrait"
-                  height="500px"
-                  width="100%"
-                ></img>
-              </div>
-              <p className="memberRole center">Owner & Senior stylist</p>
-              <h5 className="memberName center">Katie</h5>
-              <div className="memberDescription ">
-                After training to be a hairdresser at Mahogany, Katie went on to
-                work on a cruise liner sailing around the Caribbean, after
-                leaving cruises she went on to backpack around the world and
-                ended up working in Melbourne at a blow dry bar before returning
-                to the UK and landing a job in her hometown at Polished in
-                Bampton.
-                <br /> I love to learn new things and am always trying to
-                challenge myself with something new, we are always doing
-                training in new techniques in salon and on courses.
-                <br /> On cruises I did lots of event hair for evening wear and
-                on-board weddings, this is an area of hairdressing I want to
-                focus on again this year as I love creating fabulous up-do’s!{" "}
-                <br />
-                “I love my clients to leave feeling confident and fabulous with
-                a bounce in their step, it’s about making you feel like the best
-                version of yourself!”
-              </div>
-            </div>
-            <div className="memberCard">
-              <div className="memberImg">
-                <img
-                  src={comingSoon}
-                  alt="portrait"
-                  height="500px"
-                  width="100%"
-                ></img>
-              </div>
-              <p className="memberRole center">Senior stylist</p>
-              <h5 className="memberName center">Kerry</h5>
-              <div className="memberDescription ">
-                Started her career in Minster Lovell before moving on to work
-                for Toni & Guy, most recently working in Morton on the Marsh
-                before returning to Bampton where she was brought up as a child.
-                <br />
-                Kerry has real passion and enthusiasm for her career, having
-                built her knowledge within the industry. Kerry has experience in
-                all aspects of hairdressing, she loves to balayage and finishing
-                off with a precision cut.
-                <br /> With a caring approach to her clients she maintains a
-                busy column, she loves to keep up to date and is regularly on
-                courses sharpening her skills. <br />
-                “I love that my job allows me to be creative every day, my job
-                satisfaction comes from making my clients feel good about
-                themselves, after all your hair is 90% of your selfie!”
-              </div>
-            </div>
-            <div className="memberCard">
-              <div className="memberImg">
-                <img
-                  src={comingSoon}
-                  alt="portrait"
-                  height="500px"
-                  width="100%"
-                ></img>
-              </div>
-              <p className="memberRole center">Stylist</p>
-              <h5 className="memberName center">Wiki</h5>
-              <div className="memberDescription">
-                I have always enjoyed hairdressing, so decided to pursue a
-                career within the industry. It was unquestionably the right
-                choice.
-                <br />
-                I would say I am a perfectionist and I like everything I do to
-                be flawless. I can’t wait to start my level 3 in hairdressing so
-                I can start adding more creative elements to my work. <br />
-                “I love that I can make others feel beautiful, I have always
-                struggled with confidence so being able to give my clients that
-                boost is the most rewarding feeling.”
-              </div>
-            </div>
+          <div id="meetTheTeam">
+            <Query query={MEMBERS_QUERY} id={null}>
+              {({ data: { members } }) => {
+                return (
+                  <div className="teamCards">
+                    {members.map((member, i) => {
+                      return <MemberCard member={member} key={i} />;
+                    })}
+                  </div>
+                );
+              }}
+            </Query>
           </div>
         </div>
         <footer className="page-footer" id="aboutFooter" data-aos="fade-up">
