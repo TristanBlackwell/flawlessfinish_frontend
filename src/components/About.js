@@ -7,16 +7,22 @@ import "react-animated-slider/build/horizontal.css";
 
 import icon from "../images/icon.svg";
 import logo from "../images/logo_onwhite.jpg";
-import comingSoon from "../images/comingSoon.png";
+import hairPic1 from "../images/goodhair3.jpg";
+import hairPic2 from "../images/goodhair4.jpg";
+import hairPic3 from "../images/goodhair5.jpg";
+import hairPic4 from "../images/goodhair7.jpg";
+import hairPic5 from "../images/goodhair8.jpg";
 
 import Query from "./Query";
 import MEMBERS_QUERY from "../queries/member/member";
 import MemberCard from "./MemberCard";
 
 const slides = [
-  { url: "https://lorempixel.com/250/250/nature/1", alt: "Lorem ipsum" },
-  { url: "https://lorempixel.com/250/250/nature/2", alt: "Lorem ipsum" },
-  { url: "https://lorempixel.com/250/250/nature/3", alt: "Lorem ipsum" },
+  { url: hairPic1, alt: "Clients hair" },
+  { url: hairPic2, alt: "Clients hair" },
+  { url: hairPic3, alt: "Clients hair" },
+  { url: hairPic4, alt: "Clients hair" },
+  { url: hairPic5, alt: "Clients hair" },
 ];
 
 class About extends Component {
@@ -70,10 +76,22 @@ class About extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <i className="fab fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/FlawlessFinishHairLTD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/flawlessfinishhair/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -115,12 +133,20 @@ class About extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.facebook.com/FlawlessFinishHairLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook socialMobileLink"></i>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.instagram.com/flawlessfinishhair/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram socialMobileLink"></i>
               </a>
             </li>

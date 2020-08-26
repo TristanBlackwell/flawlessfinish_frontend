@@ -60,10 +60,22 @@ class Services extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <i className="fab fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/FlawlessFinishHairLTD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/flawlessfinishhair/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -105,12 +117,20 @@ class Services extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.facebook.com/FlawlessFinishHairLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook socialMobileLink"></i>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.instagram.com/flawlessfinishhair/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram socialMobileLink"></i>
               </a>
             </li>
@@ -180,42 +200,82 @@ class Services extends Component {
           </div>
         </div>
         <div className="divider"></div>
-        <div id="serviceBooking" data-aos="zoom-out-up">
-          <div id="bookingHeader">
-            <h3>Booking appointments</h3>
+        <div id="covidNotice" data-aos="zoom-out-up">
+          <div id="covidHeader">
+            <h3>Covid-19 Guidelines</h3>
           </div>
-          <div id="bookingtext">
+          <div id="covidText">
             <p id="covidAlert">
-              As a result of current Covid-19 guidelines we are not taking
-              online bookings presently. Please{" "}
-              <NavLink to="/contact">contact us</NavLink> or give us a ring to
-              book an appointment. We aim to be restart online booking as soon
-              as possible. Thank you
+              We are so happy to be back in the salon and we are of course are
+              adhering to all government guidelines in order to carry out all
+              services and treatments in the safest way possible. Please take
+              the time to read the following points carefully to help us provide
+              as smooth a service as possible:
             </p>
-            <p className="black-text">
-              Not all our services are listed within online booking so if you
-              cannot see what you need please give us a call on 01993 201195. We
-              also run a cancellation list within the salon at busy times.
-              <br />
-              Please note – Once we receive your online booking we will approve
-              it in salon, this means it can only be confirmed during our
-              ‘opening hours’ but dont worry it will hold the appointment for
-              you! If you dont receive a confirmation email please get in touch.
-              <br />
-              <br />* All Tints for beauty and hair require a Patch Test 48
-              hours prior to treatment therefore if you have not visited the
-              salon previously please call us to arrange this before your
-              treatment.
-              <br />
-              <br />
-              Should you wish to cancel an appointment, less than 24 hours prior
-              notice before the scheduled time will result in a 50% fee. No
-              notice given leaves you liable for the full charge.
-              <br />
-              We understand sometimes situations cannot be foreseen. In both
-              cases, extenuating circumstances will be considered, but the final
-              decision will be at the sole discretion of Flawless Finish.
+            <ul>
+              <li>
+                To reduce numbers in the building we are running on a reduce
+                waiting area so as to adhere to social distancing, please wait
+                outside the salon to be welcomed in when there is space.
+              </li>
+              <li>
+                We regret that due to restrictions and compulsory cleaning times
+                we are unable to accept late arrivals, please let us know as
+                soon as possible if you are running late and we will be able to
+                advise you on what is best to do. A 72-hour cancellation policy
+                is in place; if you fail to turn up or cancel last minute
+                whether that be the whole service or a single treatment within
+                it.
+              </li>
+              <li>
+                We are trying to avoid too many people in the building at one
+                time, if you are booking an appointment for a child or someone
+                who cannot attend their appointment alone please make staff
+                aware before booking so we can decide whether we can accommodate
+                this on the appointment time.
+              </li>
+              <li>
+                Please do not attend your appointment if you feel at all unwell,
+                Even if you are sure you do not have COVID-19. But especially if
+                you have any of the following sympotoms a persistant cough, high
+                temperature or a loss in your sense of taste or smell. We are a
+                small team and having anyone off sick would be devastating for
+                all involved so please give us as much notice as you can, and
+                you will not be charged a cancellation fee.
+              </li>
+              <li>
+                When you enter the building please make sure you use the
+                sanitising gel. It is now mandatory for all customers to wear a
+                facemask inside the salon, unless they are exempt for medical
+                reasons. It has been advised that staff are to wear visors with
+                a mask when in close contact with customers, we are smiling
+                underneath!
+              </li>
+              <li>
+                If you wish to tip your stylist you are welcome to in cash (it
+                unfortunately cannot be added on to card). There are clear pots
+                by the reception desk that you can place any change in so money
+                does not need to be touched.
+              </li>
+              <li>
+                If you wish to buy a retail product, we would prefer you to
+                call/email us and we can give you a collection time. If this is
+                not possible, please be prepared that there may be a wait for
+                someone to assist you and you may be required to wait outside
+                during busy times.
+              </li>
+              <li>
+                We are unable to provide handing space for any coats/jackets so
+                please bear this in mind and be prepared to pop them in your bag
+                or next to you.
+              </li>
+            </ul>
+            <p>
+              Thank you so much for taking the time to read these new
+              guidelines, we are very grateful. The team look forward to
+              welcoming you.
             </p>
+            <p>The Flawless Finsh team x</p>
           </div>
           <div id="bookingCTA" className="center">
             <a href="#!" className="waves-effect waves-light btn-large">

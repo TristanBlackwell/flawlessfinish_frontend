@@ -528,27 +528,31 @@ body {
   font-weight: 900;
 }
 
-#serviceBooking {
+#covidNotice {
   width: 85%;
   margin: auto;
 }
 
-#bookingHeader h3 {
+#covidHeader h3 {
   margin-top: 3rem;
   font-family: "Betty Lavea";
   color: black;
   font-weight: 800;
 }
 
-#bookingtext {
+#covidText {
   margin-top: 2rem;
   margin-bottom: 3rem;
   font-size: 1.05rem;
 }
 
-#bookingtext a {
-  color: #b66c6d;
-  font-weight: 800;
+#covidText ul {
+  padding-left: 1rem;
+}
+
+#covidText ul li {
+  list-style-type: disc;
+  padding-bottom: 1rem;
 }
 
 #serviceFooter {
@@ -560,7 +564,7 @@ body {
 }
 #wellnessHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url("./images/wellnessBannerCentre.jpg");
+    url("./images/wellnessBannerNew.jpg");
   background-attachment: scroll;
   background-position: top;
   height: 40vh;
@@ -946,7 +950,7 @@ footer ul li {
     line-height: 7.5rem;
   }
 
-  #teamCards {
+  .teamCards {
     margin-top: 1rem;
   }
 
@@ -997,7 +1001,7 @@ footer ul li {
     padding-left: 15vw;
   }
 
-  #teamCards {
+  .teamCards {
     width: 100%;
   }
 

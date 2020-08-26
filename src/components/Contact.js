@@ -84,10 +84,22 @@ class Contact extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <i className="fab fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/FlawlessFinishHairLTD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/flawlessfinishhair/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -129,12 +141,20 @@ class Contact extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.facebook.com/FlawlessFinishHairLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook socialMobileLink"></i>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.instagram.com/flawlessfinishhair/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram socialMobileLink"></i>
               </a>
             </li>
@@ -263,7 +283,7 @@ class Contact extends Component {
           <div className="col s12 m6" id="contactBottom" data-aos="flip-right">
             <div className="container center">
               <div>Logo</div>
-              <h5>The stores, Market square / Bampton OX18 2JJ</h5>
+              <h5>The Stores, Market Square / Bampton OX18 2JJ</h5>
               <h5>01993 850886 / flawlessfinish@email.com</h5>
               <br />
               <a href="#!">Need directions?</a>

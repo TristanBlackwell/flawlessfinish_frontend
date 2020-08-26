@@ -56,10 +56,22 @@ class WellnessRooms extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <i className="fab fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/FlawlessFinishHairLTD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/flawlessfinishhair/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -101,12 +113,20 @@ class WellnessRooms extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.facebook.com/FlawlessFinishHairLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook socialMobileLink"></i>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.instagram.com/flawlessfinishhair/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram socialMobileLink"></i>
               </a>
             </li>

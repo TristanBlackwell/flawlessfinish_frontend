@@ -18,12 +18,6 @@ const slides = [
       "The ease and comfort of this most salon is the perfect part of a busy life. The charm and skill of the staff helps you feel really confident in them",
     author: "- Jennie",
   },
-  {
-    reviewTag: "Warm & Friendly",
-    reviewText:
-      "Polished is a gem – the salon is a relaxing and welcoming place where you receive a personal and friendly service",
-    author: "- Anne",
-  },
 ];
 
 class Landing extends Component {
@@ -76,10 +70,22 @@ class Landing extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <i className="fab fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/FlawlessFinishHairLTD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/flawlessfinishhair/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -131,12 +137,20 @@ class Landing extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.facebook.com/FlawlessFinishHairLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-facebook socialMobileLink "></i>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="https://www.instagram.com/flawlessfinishhair/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram socialMobileLink"></i>
               </a>
             </li>
