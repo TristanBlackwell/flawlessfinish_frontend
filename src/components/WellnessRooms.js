@@ -148,7 +148,7 @@ class WellnessRooms extends Component {
             img={wellnessTravel}
             title={"Travel Counsellor"}
             content={`Hi, I am Natalie and I run a bespoke travel business here at
-              Polished in Bampton. My services include a whole variety of travel
+              Flawless Finish in Bampton. My services include a whole variety of travel
               needs. Anything from UK holidays to around the word trips. Skiing,
               cruising, package holidays, tailor made itineraries or just
               parking at the airport, I can cover it all. I have over 20 years’
@@ -181,7 +181,27 @@ On the first visit your practitioner will take a medical history to ensure your 
 
 If you are wondering if acupuncture is suitable for your needs, Sharon offers the opportunity for a free consultation without obligation to discuss your health issue.
 
-07903 749 754 – Email – Facebook – Instagram`}
+07903 749 754 – `}
+            links={
+              <p id="holisticSocials">
+                <a href="mailto:holistichealthtraditions@gmail.com">Email</a> –{" "}
+                <a
+                  href="https://www.facebook.com/traditionalholistichealth/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>{" "}
+                –{" "}
+                <a
+                  href="https://www.instagram.com/sharon_does_acupuncture/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </p>
+            }
             link={"https://www.holistichealthtraditions.co.uk/"}
           />
           <WellnessCard

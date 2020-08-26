@@ -621,6 +621,18 @@ body {
   color: black !important;
 }
 
+.wellnessCardBtn:hover {
+  text-decoration: underline;
+}
+
+#holisticSocials a {
+  color: #b66c6d;
+}
+
+#holisticSocials a:hover {
+  text-decoration: underline;
+}
+
 #wellnessRent {
   background-color: #b66c6d;
   font-family: "Playfair Display";

@@ -16,7 +16,10 @@ class WellnessCard extends Component {
           </div>
           <div className="col l8 m12 s12" className="wellnessCardText">
             <h3 className="wellnessCardTitle">{this.props.title}</h3>
-            <p className="wellnessCardContent">{this.props.content}</p>
+            <p className="wellnessCardContent">
+              {this.props.content}
+              {this.props.links ? this.props.links : <p></p>}
+            </p>
             <a
               className="waves-effect waves-light btn-large wellnessCardBtn"
               href={this.props.link}
