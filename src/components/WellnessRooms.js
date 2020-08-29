@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import M from "materialize-css";
 
 import WellnessCard from "./WellnessCard";
 
@@ -10,6 +11,11 @@ import acupuncture from "../images/Acupuncture.jpeg";
 import sars from "../images/sars.jpg";
 
 class WellnessRooms extends Component {
+  componentDidMount() {
+    M.Sidenav.init(this.Sidenav);
+    M.Sidenav.getInstance(this.Sidenav);
+  }
+
   render() {
     return (
       <div id="wellnessPage">

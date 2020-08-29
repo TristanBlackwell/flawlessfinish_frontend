@@ -14,7 +14,6 @@ class Services extends Component {
   componentDidMount() {
     M.Sidenav.init(this.Sidenav);
     M.Sidenav.getInstance(this.Sidenav);
-    M.Tooltip.init(this.tooltip);
   }
 
   render() {
