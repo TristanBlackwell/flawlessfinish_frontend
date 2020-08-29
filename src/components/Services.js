@@ -275,7 +275,7 @@ class Services extends Component {
               guidelines, we are very grateful. The team look forward to
               welcoming you.
             </p>
-            <p>The Flawless Finsh team x</p>
+            <p>The Flawless Finish team x</p>
           </div>
           <div id="bookingCTA" className="center">
             <a href="#!" className="waves-effect waves-light btn-large">

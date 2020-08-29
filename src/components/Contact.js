@@ -194,7 +194,7 @@ class Contact extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="input-field col s6">
+                  <div className="input-field col s12 m6">
                     <input
                       id="email"
                       type="email"
@@ -204,7 +204,7 @@ class Contact extends Component {
                     <label htmlFor="email">Email</label>
                   </div>
 
-                  <div className="input-field col s6">
+                  <div className="input-field col s12 m6">
                     <input
                       id="phoneNumber"
                       type="text"

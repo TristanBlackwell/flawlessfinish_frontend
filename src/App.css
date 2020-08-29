@@ -564,7 +564,7 @@ body {
 }
 #wellnessHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url("./images/wellnessBannerNew.jpg");
+    url("./images/wellnessBanner.jpg");
   background-attachment: scroll;
   background-position: top;
   height: 40vh;
