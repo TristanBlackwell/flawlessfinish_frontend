@@ -374,6 +374,7 @@ body {
   width: 30%;
   border: 2px solid #b66c6d;
   border-radius: 2rem;
+  box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .memberImg img {
