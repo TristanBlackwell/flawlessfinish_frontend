@@ -38,7 +38,7 @@ body {
 
 #landingHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://www.polishedsalon.co.uk/wp-content/uploads/2019/06/salon-outside-700x467.jpg");
+    url("./images/storefront.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
