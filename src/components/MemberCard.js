@@ -9,7 +9,7 @@ const MemberCard = ({ member }) => {
         <img
           src={member.Portrait ? member.Portrait : comingSoon}
           alt="member portrait"
-          height="500px"
+          height="auto"
           width="100%"
         />
       </div>

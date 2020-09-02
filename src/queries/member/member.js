@@ -5,6 +5,7 @@ const MEMBERS_QUERY = gql`
   query Members {
     members {
       id
+      Portrait
       Full_Name
       Role
       Description
