@@ -38,9 +38,8 @@ body {
 
 #landingHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("./images/storefront.jpg");
+    url("./images/storefront1.jpg");
   height: 100vh;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,8 +369,15 @@ body {
 }
 
 .memberCard {
-  margin: 10%;
+  margin: 5%;
+  padding: 1%;
   width: 30%;
+  border: 2px solid #b66c6d;
+  border-radius: 2rem;
+}
+
+.memberImg img {
+  border-radius: 2rem;
 }
 
 .memberRole,
@@ -388,9 +394,9 @@ body {
 }
 
 .memberName {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Betty Lavea";
 }
 

@@ -7,11 +7,12 @@ import "react-animated-slider/build/horizontal.css";
 
 import icon from "../images/icon.svg";
 import logo from "../images/logo_onwhite.jpg";
-import hairPic1 from "../images/goodhair3.jpg";
-import hairPic2 from "../images/goodhair4.jpg";
-import hairPic3 from "../images/goodhair5.jpg";
-import hairPic4 from "../images/goodhair7.jpg";
-import hairPic5 from "../images/goodhair8.jpg";
+import hairPic1 from "../images/goodhair1.jpg";
+import hairPic2 from "../images/goodhair2.jpg";
+import hairPic3 from "../images/goodhair3.jpg";
+import hairPic4 from "../images/goodhair4.jpg";
+import hairPic5 from "../images/goodhair5.jpg";
+import hairPic6 from "../images/goodhair6.jpg";
 
 import Query from "./Query";
 import MEMBERS_QUERY from "../queries/member/member";
@@ -23,6 +24,7 @@ const slides = [
   { url: hairPic3, alt: "Clients hair" },
   { url: hairPic4, alt: "Clients hair" },
   { url: hairPic5, alt: "Clients hair" },
+  { url: hairPic6, alt: "Clients hair" },
 ];
 
 class About extends Component {
