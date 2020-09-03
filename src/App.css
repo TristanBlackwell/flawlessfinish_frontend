@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: "PrestigeElite", sans-serif;
   min-width: 100%;
+  scroll-behavior: smooth;
 }
 
 .no-shadows {
@@ -470,6 +471,24 @@ body {
   font-family: "PrestigeElite";
   border-radius: 10px;
   margin-bottom: 3rem;
+}
+
+#externalBookingPluginContainer {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  min-height: 0px;
+  border-radius: 10px;
+}
+
+#externalBookingPlugin {
+  width: 100%;
+  min-height: 0px;
+  overflow: auto;
+  max-height: 980px;
+  height: 700px;
 }
 
 .pricingSection {

@@ -152,7 +152,10 @@ class Services extends Component {
         </div>
         <div id="servicePricing">
           <div id="bookingCTA" className="center">
-            <a href="#!" className="waves-effect waves-light btn-large">
+            <a
+              href="#externalBookingPluginContainer"
+              className="waves-effect waves-light btn-large"
+            >
               Book Flawless
             </a>
           </div>
@@ -277,9 +280,24 @@ class Services extends Component {
             <p>The Flawless Finish team x</p>
           </div>
           <div id="bookingCTA" className="center">
-            <a href="#!" className="waves-effect waves-light btn-large">
-              Book Flawless
-            </a>
+            <script type="text/javascript">
+              daysmart_acc = "724c60ea-aa98-4c63-b8bc-20818a27d5f8";
+              daysmart_iframe_width = 800; daysmart_iframe_height = 0;
+              daysmart_website_root = "https://plugin.mysalononline.com";
+              load_in_iframe = "false";{" "}
+            </script>
+            <script
+              type="text/javascript"
+              src="https://plugin.mysalononline.com/Scripts/external/bookingplugin.js"
+            ></script>
+            <div id="externalBookingPluginContainer">
+              <iframe
+                id="externalBookingPlugin"
+                src="https://olb.saloniris.com/External/BookingPlugin/?guid=724c60ea-aa98-4c63-b8bc-20818a27d5f8"
+                frameborder="0"
+                scrolling="yes"
+              />
+            </div>
           </div>
         </div>
         <footer className="page-footer" id="serviceFooter" data-aos="fade-up">
