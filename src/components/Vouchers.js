@@ -42,7 +42,7 @@ class Vouchers extends Component {
   }
 
   handleQuantityChange(event) {
-    this.setState({ quantity: parseInt(event.target.value) });
+    this.setState({ quantity: event.target.value });
   }
 
   handleDeliveryChange() {
@@ -140,7 +140,7 @@ class Vouchers extends Component {
     if (this.state.deliveryType === "digital") {
       document.getElementById("voucherForm").reset();
       const { error } = await stripe.redirectToCheckout({
-        lineItems: [{ price: price, quantity: this.state.quantity }],
+        lineItems: [{ price: price, quantity: parseInt(this.state.quantity) }],
         mode: "payment",
         successUrl: "https://www.flawlessfinishhair.co.uk/success",
         cancelUrl: "https://www.flawlessfinishhair.co.uk/vouchers",
@@ -150,7 +150,7 @@ class Vouchers extends Component {
       document.getElementById("voucherForm").reset();
       const { error } = await stripe.redirectToCheckout({
         lineItems: [
-          { price: price, quantity: this.state.quantity },
+          { price: price, quantity: parseInt(this.state.quantity) },
           { price: "price_1HO1gdD7DCIwJBgEp2gRioeF", quantity: 1 },
         ],
         mode: "payment",
