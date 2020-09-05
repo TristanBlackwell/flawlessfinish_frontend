@@ -57,6 +57,11 @@ class WellnessRooms extends Component {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                    Vouchers
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/contact" className="navbarLink">
                     Contact
                   </NavLink>
@@ -111,6 +116,11 @@ class WellnessRooms extends Component {
                 className="navbarLink sidenav-close"
               >
                 Wellness Rooms
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                Vouchers
               </NavLink>
             </li>
             <li>

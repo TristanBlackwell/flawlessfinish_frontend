@@ -73,6 +73,11 @@ class About extends Component {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                    Vouchers
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/contact" className="navbarLink">
                     Contact
                   </NavLink>
@@ -127,6 +132,11 @@ class About extends Component {
                 className="navbarLink sidenav-close"
               >
                 Wellness Rooms
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                Vouchers
               </NavLink>
             </li>
             <li>

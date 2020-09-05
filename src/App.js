@@ -12,7 +12,9 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Services from "./components/Services";
 import WellnessRooms from "./components/WellnessRooms";
+import Vouchers from "./components/Vouchers";
 import Contact from "./components/Contact";
+import Success from "./components/success";
 
 class App extends Component {
   componentDidMount() {
@@ -32,7 +34,9 @@ class App extends Component {
                 <Route path="/about" component={About} />
                 <Route path="/services" component={Services} />
                 <Route path="/wellness-rooms" component={WellnessRooms} />
+                <Route path="/vouchers" component={Vouchers} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/success" component={Success} />
               </Switch>
             </ApolloProvider>
           </ScrollToTop>

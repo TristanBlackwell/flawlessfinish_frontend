@@ -54,6 +54,11 @@ class Services extends Component {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                    Vouchers
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/contact" className="navbarLink">
                     Contact
                   </NavLink>
@@ -108,6 +113,11 @@ class Services extends Component {
                 className="navbarLink sidenav-close"
               >
                 Wellness Rooms
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                Vouchers
               </NavLink>
             </li>
             <li>
@@ -293,6 +303,7 @@ class Services extends Component {
             <div id="externalBookingPluginContainer">
               <iframe
                 id="externalBookingPlugin"
+                title="bookingFrame"
                 src="https://olb.saloniris.com/External/BookingPlugin/?guid=724c60ea-aa98-4c63-b8bc-20818a27d5f8"
                 frameborder="0"
                 scrolling="yes"

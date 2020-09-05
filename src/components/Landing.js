@@ -65,6 +65,11 @@ class Landing extends Component {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                    Vouchers
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/contact" className="landingNavbarLink">
                     Contact
                   </NavLink>
@@ -126,6 +131,11 @@ class Landing extends Component {
                 className="landingNavbarLink sidenav-close"
               >
                 Wellness Rooms
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                Vouchers
               </NavLink>
             </li>
             <li>
