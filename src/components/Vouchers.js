@@ -42,7 +42,7 @@ class Vouchers extends Component {
   }
 
   handleQuantityChange(event) {
-    this.setState({ quantity: event.target.value });
+    this.setState({ quantity: parseInt(event.target.value) });
   }
 
   handleDeliveryChange() {
@@ -150,7 +150,7 @@ class Vouchers extends Component {
       document.getElementById("voucherForm").reset();
       const { error } = await stripe.redirectToCheckout({
         lineItems: [
-          { price: price, quantity: 1 },
+          { price: price, quantity: this.state.quantity },
           { price: "price_1HO1gdD7DCIwJBgEp2gRioeF", quantity: 1 },
         ],
         mode: "payment",
