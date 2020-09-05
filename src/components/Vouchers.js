@@ -60,7 +60,7 @@ class Vouchers extends Component {
     const stripe = await stripePromise;
 
     let price;
-    switch (this.state.value) {
+    switch (parseInt(this.state.value)) {
       case 10:
         price = "price_1HO1VRD7DCIwJBgERQnHhNLc";
         break;
