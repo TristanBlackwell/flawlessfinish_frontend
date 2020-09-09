@@ -446,6 +446,11 @@ body {
   width: 100%;
 }
 
+#servicesHeader p {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 #headerUnderline {
   background-color: #b66c6d;
   width: 3%;
@@ -1039,7 +1044,7 @@ footer ul li {
 
 @media only screen and (max-width: 600px) {
   #landingHeroContent {
-    top: 55%;
+    top: 65%;
     left: 50%;
   }
 
