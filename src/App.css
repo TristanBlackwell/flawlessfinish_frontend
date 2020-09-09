@@ -1047,6 +1047,14 @@ footer ul li {
 }
 
 @media only screen and (max-width: 600px) {
+  #Landing,
+  #aboutPage,
+  #servicesPage,
+  #wellnessPage,
+  #vouchersPage,
+  #contactPage {
+    background-size: 200%;
+  }
   #landingHeroContent {
     top: 65%;
     left: 50%;
