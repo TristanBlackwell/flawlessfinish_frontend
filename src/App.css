@@ -316,7 +316,10 @@ body {
   width: 55%;
   margin: auto;
   margin-top: 5%;
+  padding: 1%;
   background-color: white;
+  border: 3px solid #b66c6d;
+  border-radius: 2rem;
 }
 
 #aboutFlawless div {
@@ -352,7 +355,7 @@ body {
 #flawlessGallery img {
   height: 320px;
   width: 320px;
-  border-radius: 3px;
+  border-radius: 1em;
 }
 
 #flawlessTeam {
@@ -559,7 +562,8 @@ body {
 
 .treatmentPrice {
   font-family: "PrestigeElite";
-  font-weight: bold;
+  font-size: 1.45em;
+  font-weight: bolder;
   color: #b66c6d !important;
 }
 
