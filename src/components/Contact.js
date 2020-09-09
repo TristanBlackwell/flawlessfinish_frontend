@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -301,9 +302,11 @@ class Contact extends Component {
                 <i className="fab fa-facebook-square"></i>
                 <i className="fab fa-instagram"></i>
               </h6>
-              <button className="waves-effect waves-light btn-large">
-                Book Flawless
-              </button>
+              <Link to="/services#externalBookingPluginContainer">
+                <button className="waves-effect waves-light btn-large">
+                  Book Flawless
+                </button>
+              </Link>
               <div id="contactCopyright">
                 <p>© 2020 Flawless</p>
               </div>

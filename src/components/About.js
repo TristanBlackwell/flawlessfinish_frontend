@@ -216,7 +216,7 @@ class About extends Component {
             we have to offer.
           </div>
         </div>
-        <div>
+        <div id="clientHairSlider">
           <Slider autoplay={4000}>
             {slides.map((slide, index) => (
               <div key={index} id="flawlessGallery" className="center">

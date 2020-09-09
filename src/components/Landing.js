@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
+
+import salonImg from "../images/salonImg.jpg";
 
 const slides = [
   {
@@ -65,7 +68,10 @@ class Landing extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/vouchers" className="navbarLink sidenav-close">
+                  <NavLink
+                    to="/vouchers"
+                    className="landingNavbarLink sidenav-close"
+                  >
                     Vouchers
                   </NavLink>
                 </li>
@@ -166,14 +172,13 @@ class Landing extends Component {
             </li>
           </ul>
           <div id="landingHeroContent">
-            <h1>Your Beauty, Pronouced</h1>
-            <p>salon // Bampton</p>
-            <NavLink
-              to="/services"
+            <h1>Salon in Bampton</h1>
+            <Link
+              to="/services#externalBookingPluginContainer"
               className="waves-effect waves-light btn-large"
             >
               Book Flawless
-            </NavLink>
+            </Link>
           </div>
         </div>
 
@@ -198,11 +203,7 @@ class Landing extends Component {
         <div id="ourSalon" className="transparent">
           <div className="row">
             <div className="col s12 m12 l5 offset-l1 valign-wrapper">
-              <img
-                src="https://www.polishedsalon.co.uk/wp-content/uploads/2019/06/Bamton-House-1-700x467.jpg"
-                alt="Candle and towel"
-                id="salonPicture"
-              />
+              <img src={salonImg} alt="Candle and towel" id="salonPicture" />
             </div>
             <div className="col s12 m12 l5 offset-l1 center" id="ourSalonInfo">
               <h3 id="ourSalonTitle">What to expect</h3>
