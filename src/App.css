@@ -340,6 +340,10 @@ body {
   margin-bottom: 5rem;
 }
 
+#clientHairImg {
+  max-width: 100%;
+}
+
 #aboutPage .slider {
   margin: auto;
   width: 80%;
@@ -1120,6 +1124,10 @@ footer ul li {
     height: 320px;
     width: 320px;
     border-radius: 3px;
+  }
+
+  #clientHairSlider {
+    width: 60%;
   }
 
   #flawlessTeam h3 {

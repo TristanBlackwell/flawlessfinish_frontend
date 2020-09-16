@@ -220,7 +220,7 @@ class About extends Component {
           <Slider autoplay={4000}>
             {slides.map((slide, index) => (
               <div key={index} id="flawlessGallery" className="center">
-                <img src={slide.url} alt={slide.alt}></img>
+                <img src={slide.url} alt={slide.alt} id="clientHairImg"></img>
               </div>
             ))}
           </Slider>

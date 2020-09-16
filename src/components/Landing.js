@@ -18,7 +18,7 @@ const slides = [
   {
     reviewTag: "Natural Charm",
     reviewText:
-      "The ease and comfort of this most salon is the perfect part of a busy life. The charm and skill of the staff helps you feel really confident in them",
+      "The ease and comfort of this salon is the perfect part of a busy life. The charm and skill of the staff helps you feel really confident in them",
     author: "- Jennie",
   },
 ];
