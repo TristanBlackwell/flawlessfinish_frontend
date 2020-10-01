@@ -21,6 +21,12 @@ const slides = [
       "The ease and comfort of this salon is the perfect part of a busy life. The charm and skill of the staff helps you feel really confident in them",
     author: "- Jennie",
   },
+  {
+    reviewTag: "Excellent Salon",
+    reviewText:
+      "This place is awesome! The staff are very professional, friendly and welcoming. My hair looks amazing and I felt safe being there under the current conditions. Excellent salon!",
+    author: "Alison",
+  },
 ];
 
 class Landing extends Component {
@@ -185,9 +191,9 @@ class Landing extends Component {
         <div id="reviewSummary">
           <Slider autoplay={4000}>
             {slides.map((slide, index) => (
-              <div key={index} className="center">
-                <div className="reviewTag">" {slide.reviewTag} "</div>
-                <h2>{slide.reviewText}</h2>
+              <div key={index} className="review center">
+                <div className="reviewTag">"{slide.reviewTag}"</div>
+                <p className="reviewText">" {slide.reviewText} "</p>
                 <p>{slide.author}</p>
               </div>
             ))}
