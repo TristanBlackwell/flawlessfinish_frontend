@@ -160,7 +160,7 @@ class WellnessRooms extends Component {
           </p>
         </div>
         <div id="wellnessContent">
-          <WellnessCard
+          {/* <WellnessCard
             img={wellnessTravel}
             title={"Travel Counsellor"}
             content={`Hi, I am Natalie and I run a bespoke travel business here at
@@ -185,7 +185,7 @@ class WellnessRooms extends Component {
               taking care of all of your travel needs so all you have to do is
               look forward to your trip.`}
             link={"https://www.travelcounsellors.co.uk/natalie.alcraft"}
-          />
+          />*/}
           <WellnessCard
             img={acupuncture}
             title={

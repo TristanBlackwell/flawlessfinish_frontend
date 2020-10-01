@@ -25,7 +25,7 @@ const slides = [
     reviewTag: "Excellent Salon",
     reviewText:
       "This place is awesome! The staff are very professional, friendly and welcoming. My hair looks amazing and I felt safe being there under the current conditions. Excellent salon!",
-    author: "Alison",
+    author: "- Alison",
   },
 ];
 
