@@ -174,13 +174,13 @@ class About extends Component {
           <div className="container center">
             Flawless Finish Hair is a boutique salon based in the heart of
             Bampton, Oxfordshire. Situated within a Grade II listed building,
-            its walls of cotswold stone have served the village as a local store
+            its walls of Cotswold stone have served the village as a local store
             for over 200 years.
             <br />
             <br /> Our purpose is to provide our guests with a relaxing salon
-            environment whilst providing services of the highest standard within
-            the hair salon and wellness rooms above helping you feel better on
-            both the inside and out.
+            environment whilst providing services of the highest standard,
+            within the hair salon and wellness rooms above helping you feel
+            better on both the inside and out.
             <br />
             <br /> Previously part of Polished Salon also in the centre of
             Bampton, we have re-opened as Flawless Finish under the guidance of
@@ -202,12 +202,12 @@ class About extends Component {
             experiences with.
             <br />
             <br /> All of our team have a burning passion for the hair industry,
-            regularaly attending up to date training in salon and by attending
+            regularly attending up to date training in salon and by attending
             courses on the most up to date techniques and fashions to give their
             guests the very best service they can.
             <br /> <br />
             Taking joy from the smiles and confidence customers leave the salon
-            with provide our team with the fire to keep providing the best
+            with, provide our team with the fire to keep providing the best
             service possible to every client coming through the door.
             <br /> <br />
             At Flawless we stand behind our salon and service aiming to

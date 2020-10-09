@@ -227,7 +227,7 @@ class Services extends Component {
             <ul>
               <li>
                 To reduce numbers in the building we are running on a reduce
-                waiting area so as to adhere to social distancing, please wait
+                waiting area so to adhere to social distancing, please wait
                 outside the salon to be welcomed in when there is space.
               </li>
               <li>
@@ -248,8 +248,8 @@ class Services extends Component {
               </li>
               <li>
                 Please do not attend your appointment if you feel at all unwell,
-                Even if you are sure you do not have COVID-19. But especially if
-                you have any of the following sympotoms a persistant cough, high
+                even if you are sure you do not have COVID-19. But especially if
+                you have any of the following symptoms a persistent cough, high
                 temperature or a loss in your sense of taste or smell. We are a
                 small team and having anyone off sick would be devastating for
                 all involved so please give us as much notice as you can, and
@@ -258,13 +258,13 @@ class Services extends Component {
               <li>
                 When you enter the building please make sure you use the
                 sanitising gel. It is now mandatory for all customers to wear a
-                facemask inside the salon, unless they are exempt for medical
+                facemask inside the salon unless they are exempt for medical
                 reasons. It has been advised that staff are to wear visors with
                 a mask when in close contact with customers, we are smiling
                 underneath!
               </li>
               <li>
-                If you wish to tip your stylist you are welcome to in cash (it
+                If you wish to tip your stylist, you are welcome to in cash (it
                 unfortunately cannot be added on to card). There are clear pots
                 by the reception desk that you can place any change in so money
                 does not need to be touched.
@@ -277,14 +277,14 @@ class Services extends Component {
                 during busy times.
               </li>
               <li>
-                We are unable to provide handing space for any coats/jackets so
+                We are unable to provide hanging space for any coats/jackets so
                 please bear this in mind and be prepared to pop them in your bag
                 or next to you.
               </li>
             </ul>
             <p>
               Thank you so much for taking the time to read these new
-              guidelines, we are very grateful. The team look forward to
+              guidelines, we are very grateful and the team look forward to
               welcoming you.
             </p>
             <p>The Flawless Finish team x</p>

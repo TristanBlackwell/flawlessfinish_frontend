@@ -315,7 +315,7 @@ class Vouchers extends Component {
               <br />
               Treat someone you know to a voucher for Flawless salon. Ranging
               from £10 - £200 a Flawless Voucher can be used across any
-              purchases in the salon and lasts for a year from the purchase
+              purchases in the salon and are valid for a year from the purchase
               date. <br />
               <br />
               You can choose whether to have this sent digitally free of charge
