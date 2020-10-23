@@ -9,6 +9,7 @@ import icon from "../images/icon.svg";
 import wellnessTravel from "../images/wellnessTravel.png";
 import acupuncture from "../images/Acupuncture.jpeg";
 import sars from "../images/sars.jpg";
+import guyLennon from "../images/guyLennon.jpg"
 
 class WellnessRooms extends Component {
   componentDidMount() {
@@ -236,6 +237,12 @@ Payment is made before each session. Any queries then please call me 07906 32059
 `}
             link={"http://www.sarlifecoaching.co.uk/"}
           />
+          <WellnessCard
+            img={guyLennon}
+            title={"Guy Lennon counselling"}
+            content={'Your life does not get better by chance, it gets better by change.\n\nLife is not often easy; if you are facing challenging periods and struggling to get through or carry on then you are certainly not alone. People come to therapy for many reasons, you might feel like you are living in the shadow of past events or you struggle with relationships, addiction or are feeling stuck and not knowing why. There is no such thing as a problem which is too big or too small or too strange. Everyone needs a helping hand once in a while.\n\nWe would love to introduce you to Guy Lennon, our amazing counsellor. Guy is a private counsellor with 10 years of experience, in which he\'s helped many individuals overcome their obstacles in life. He covers all areas of counselling, specialising in chemical and behavioural addiction and post-traumatic stress disorder (PTSD). Guy has a friendly face which some of you may have seen around Bampton. He is here if anyone needs anything and he always has time to listen.\n\nIf you need anything feel free to call Guy on 07980 922518 to book your consultation or head over to his website.'}
+            link={"http://www.guylennoncounselling.co.uk/"}
+            />
           <div className="container">
             <div className="card" id="wellnessRent">
               <div className="card-content white-text">
