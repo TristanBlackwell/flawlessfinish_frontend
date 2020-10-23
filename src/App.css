@@ -665,6 +665,7 @@ body {
 .wellnessCardContent {
   font-family: "PrestigeElite";
   padding-bottom: 1.5rem;
+  white-space: pre-wrap;
 }
 
 .wellnessCardBtn {
