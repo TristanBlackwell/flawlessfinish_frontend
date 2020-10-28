@@ -9,7 +9,7 @@ import icon from "../images/icon.svg";
 import wellnessTravel from "../images/wellnessTravel.png";
 import acupuncture from "../images/Acupuncture.jpeg";
 import sars from "../images/sars.jpg";
-import guyLennon from "../images/guyLennon.jpg"
+import guyLennon from "../images/guyLennonResize.jpg"
 
 class WellnessRooms extends Component {
   componentDidMount() {
