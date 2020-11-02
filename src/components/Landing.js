@@ -177,6 +177,13 @@ class Landing extends Component {
               </a>
             </li>
           </ul>
+          <div id="covidAlert">
+            <p>It is with heavy hearts we will be closing our doors after Wednesday 4th November until December due
+              to a tightening of Covid 19 restrictions. For anyone with appointments booked during this time we will
+              be in contact to re-schedule treatments. We hope everyone stays safe and we will see you
+              soon!
+            </p>
+          </div>
           <div id="landingHeroContent">
             <h1>Salon in Bampton</h1>
             <Link
