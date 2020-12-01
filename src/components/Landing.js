@@ -178,10 +178,13 @@ class Landing extends Component {
             </li>
           </ul>
           <div id="covidAlert">
-            <p>It is with heavy hearts we will be closing our doors after Wednesday 4th November until December due
-              to a tightening of Covid 19 restrictions. For anyone with appointments booked during this time we will
-              be in contact to re-schedule treatments. We hope everyone stays safe and we will see you
-              soon!
+            <p>We are happy to say from the 2nd December Flawless Finish will re-open its doors
+              once again! As always we will stay informed on the latest Covid-19 restrictions
+              to adjust accordingly but hope to see everyone soon.
+              <br />
+              <br />
+              Head to our services page or give us a call today to get your latest 
+              appointments booked in!
             </p>
           </div>
           <div id="landingHeroContent">
