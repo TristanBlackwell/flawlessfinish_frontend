@@ -695,7 +695,8 @@ body {
   text-decoration: underline;
 }
 
-#holisticSocials a {
+#holisticSocials a,
+#skinSocials a {
   color: #b66c6d;
 }
 
