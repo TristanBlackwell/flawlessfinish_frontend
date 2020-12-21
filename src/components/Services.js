@@ -276,11 +276,6 @@ class Services extends Component {
                 someone to assist you and you may be required to wait outside
                 during busy times.
               </li>
-              <li>
-                We are unable to provide hanging space for any coats/jackets so
-                please bear this in mind and be prepared to pop them in your bag
-                or next to you.
-              </li>
             </ul>
             <p>
               Thank you so much for taking the time to read these new
