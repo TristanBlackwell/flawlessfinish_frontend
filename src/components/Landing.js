@@ -177,7 +177,7 @@ class Landing extends Component {
               </a>
             </li>
           </ul>
-          <div id="covidAlert">
+          <div id="landingCovidAlert">
             <p>We are happy to say from the 2nd December Flawless Finish will re-open its doors
               once again! As always we will stay informed on the latest Covid-19 restrictions
               to adjust accordingly but hope to see everyone soon.

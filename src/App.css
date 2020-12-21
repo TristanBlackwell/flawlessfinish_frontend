@@ -126,7 +126,7 @@ body {
   color: #f4dad2;
 }
 
-#covidAlert {
+#landingCovidAlert {
   display: flex;
   width: 70%;
   margin: auto;
@@ -135,6 +135,19 @@ body {
   border-radius: 10px;
   transform: translateY(60%);
   color: white;
+  font-size: 1.2rem;
+  padding: 0 1rem 0 1rem;
+}
+
+#CovidAlert {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  border: 3px solid #b66c6d;
+  border-radius: 10px;
+  transform: translateY(60%);
+  color: black;
   font-size: 1.2rem;
   padding: 0 1rem 0 1rem;
 }
