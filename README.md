@@ -1,22 +1,3 @@
-# Flawless Finish Hair
-
-Front end for Flawless Finish hair salon.
-
-deployed at https://www.flawlessfinishhair.co.uk/
-
-React V16 SPA
-
-Strapi implementation for required components (pricing, team section). MongoDB atlas for information storage and backend hosted by heroku.
-Queries obtained by apollo client and graphql.
-
-Stripe API for voucher payments
-
-Salon Iris web application plugin linked to salon computers for online appointment booking capabilities
-
-Site is continually updated.
-
-Created by Tristan Blackwell
-
 # Flawless Finish Hair (frontend)
 
 ## About the project
@@ -26,6 +7,8 @@ Flawless finish is a recently opened hair salon that required a site to match th
 The website required displaying various information regarding the salon, treatments and Wellness rooms that are rented by external companies/individuals.
 
 A payment solution was required for allowing clients to purchase vouchers, a booking system for scheduling hair appointments and a contact form in the event of customers having questions to the business.
+
+Strapi CMS is used for editing content live quickly and efficiently
 
 **This is the code for the front end of the website**
 
@@ -44,7 +27,7 @@ View the [source code]
 - GraphQL
 - Stripe
 - Formspree
-- Contentful
+- Strapi
 - Materializecss
 - Fontawesome
 - aos
