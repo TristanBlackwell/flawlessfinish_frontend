@@ -1269,6 +1269,7 @@ footer ul li {
   }
   #landingCovidAlert {
     position: absolute;
+    top: -3%;
   }
 }
 
