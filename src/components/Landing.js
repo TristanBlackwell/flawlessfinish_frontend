@@ -178,13 +178,17 @@ class Landing extends Component {
             </li>
           </ul>
           <div id="landingCovidAlert">
-            <p>We are happy to say from the 2nd December Flawless Finish will re-open its doors
-              once again! As always we will stay informed on the latest Covid-19 restrictions
-              to adjust accordingly but hope to see everyone soon.
+            <p>With the latest government annoucement we must regrettably once again shut our doors whilst
+              Oxfordshire is under tier 4 restrictions. We are upset that we are unable to see all our lovely
+              clients but hope to re-open as soon as possible in line with government guidelines.
+              We hope everyone has a lovely holiday period and stays safe until we can see everyone once again.
               <br />
               <br />
-              Head to our services page or give us a call today to get your latest 
-              appointments booked in!
+              Online booking is currently unavailable until dates can be confirmed however should you
+              wish to book an appointment for the future please send us an <a href="mailto: info@flawlessfinishhair.co.uk">email</a>.
+              <br />
+              <br />
+              All the best - The Flawless Team
             </p>
           </div>
           <div id="landingHeroContent">

@@ -295,7 +295,7 @@ class Contact extends Component {
             <div className="container center">
               <div>Logo</div>
               <h5>The Stores, Market Square / Bampton OX18 2JJ</h5>
-              <h5>01993 850886 / flawlessfinish@email.com</h5>
+              <h5>01993 850886 / info@flawlessfinishhair.co.uk</h5>
               <br />
               <a href="#!">Need directions?</a>
               <h6>

@@ -133,10 +133,16 @@ body {
   justify-content: center;
   border: 3px solid #b66c6d;
   border-radius: 10px;
-  transform: translateY(60%);
+  transform: translateY(30%);
   color: white;
   font-size: 1.2rem;
   padding: 0 1rem 0 1rem;
+  transform: scale(0.8);
+}
+
+#landingCovidAlert a {
+  color: white;
+  text-decoration: underline;
 }
 
 #CovidAlert {
@@ -1078,6 +1084,54 @@ footer ul li {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 900px) {
+  .brand-logo {
+    margin-left: 0;
+  }
+
+  #landingCovidAlert {
+    width: 100%;
+    transform: scale(0.8);
+  }
+  #landingHero,
+  #aboutHero,
+  #servicesHero {
+    background-attachment: scroll;
+  }
+  #ourSalon {
+    padding-left: 15vw;
+  }
+
+  #teamCards {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .memberCard {
+    margin: 0;
+    width: 65%;
+    margin-bottom: 3rem;
+  }
+
+  .wellnessCard .row .col {
+    padding: 0;
+  }
+
+  .wellnessCardText {
+    display: block;
+    padding-left: 0;
+  }
+
+  .wellnessCardImg {
+    margin-bottom: 2.5rem;
+  }
+
+  .treatmentCard {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #Landing,
   #aboutPage,
@@ -1088,9 +1142,8 @@ footer ul li {
     background-size: 200%;
   }
 
-  #covidAlert {
-    width: 100%;
-    transform: scale(0.8);
+  #landingCovidAlert {
+    transform: scale(0.6);
   }
 
   #landingHeroContent {
@@ -1207,49 +1260,6 @@ footer ul li {
 
   #contactBottom {
     height: 65vh;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .brand-logo {
-    margin-left: 0;
-  }
-  #landingHero,
-  #aboutHero,
-  #servicesHero {
-    background-attachment: scroll;
-  }
-  #ourSalon {
-    padding-left: 15vw;
-  }
-
-  #teamCards {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .memberCard {
-    margin: 0;
-    width: 65%;
-    margin-bottom: 3rem;
-  }
-
-  .wellnessCard .row .col {
-    padding: 0;
-  }
-
-  .wellnessCardText {
-    display: block;
-    padding-left: 0;
-  }
-
-  .wellnessCardImg {
-    margin-bottom: 2.5rem;
-  }
-
-  .treatmentCard {
-    width: 100%;
   }
 }
 
