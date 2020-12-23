@@ -1263,13 +1263,12 @@ footer ul li {
   }
 }
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 850px) {
   #landingHero {
     height: 150vh;
   }
   #landingCovidAlert {
     position: absolute;
-    top: -3%;
   }
 }
 
