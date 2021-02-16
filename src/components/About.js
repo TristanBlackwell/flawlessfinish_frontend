@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -18,6 +18,9 @@ import Query from "./Query";
 import MEMBERS_QUERY from "../queries/member/member";
 import MemberCard from "./MemberCard";
 
+let sidenav;
+let carousel;
+
 const slides = [
   { url: hairPic1, alt: "Clients hair" },
   { url: hairPic2, alt: "Clients hair" },
@@ -27,15 +30,20 @@ const slides = [
   { url: hairPic6, alt: "Clients hair" },
 ];
 
-class About extends Component {
-  componentDidMount() {
-    M.Sidenav.init(this.Sidenav);
+const About = () => {
+  useEffect(() => {
+    M.Sidenav.init(sidenav);
 
-    M.Sidenav.getInstance(this.Sidenav);
-    M.Carousel.init(this.carousel);
+    M.Sidenav.getInstance(sidenav);
+    M.Carousel.init(carousel);
+
+    if (window.loc !== window.location.pathname) {
+        window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "About"
+      })
   }
+  })
 
-  render() {
     return (
       <div id="aboutPage">
         <div className="navContainer" id="contactNavigation">
@@ -106,7 +114,7 @@ class About extends Component {
 
           <ul
             ref={(Sidenav) => {
-              this.Sidenav = Sidenav;
+              sidenav = Sidenav;
             }}
             className="sidenav"
             id="mobile-demo"
@@ -273,6 +281,5 @@ class About extends Component {
       </div>
     );
   }
-}
 
 export default About;

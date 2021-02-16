@@ -35,6 +35,23 @@ class Vouchers extends Component {
       delivery: false,
       deliveryType: "digital",
     });
+
+    if (window.loc !== window.location.pathname) {
+      if (window.gtag) {
+        window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "Vouchers"
+      })
+      }
+  }
+  }
+
+  componentWillUnmount() {
+    if (window.loc !== window.location.pathname) {
+        window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "Vouchers"
+      })
+
+  }
   }
 
   handleValueChange(event) {

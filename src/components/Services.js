@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -10,13 +10,20 @@ import Treatments from "./Treatments";
 import Query from "./Query";
 import CATEGORIES_QUERY from "../queries/category/categories";
 
-class Services extends Component {
-  componentDidMount() {
-    M.Sidenav.init(this.Sidenav);
-    M.Sidenav.getInstance(this.Sidenav);
-  }
+let sidenav;
 
-  render() {
+const Services = () => {
+  useEffect(() => {
+    M.Sidenav.init(sidenav);
+    M.Sidenav.getInstance(sidenav);
+
+    if (window.loc !== window.location.pathname) {
+      window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "Services"
+      })
+  }
+  })
+
     return (
       <div id="servicesPage">
         <div className="navContainer" id="contactNavigation">
@@ -87,7 +94,7 @@ class Services extends Component {
 
           <ul
             ref={(Sidenav) => {
-              this.Sidenav = Sidenav;
+              sidenav = Sidenav;
             }}
             className="sidenav"
             id="mobile-demo"
@@ -337,6 +344,5 @@ class Services extends Component {
       </div>
     );
   }
-}
 
 export default Services;

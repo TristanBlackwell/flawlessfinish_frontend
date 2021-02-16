@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import M from "materialize-css";
 
@@ -12,13 +12,20 @@ import sars from "../images/sars.jpg";
 import guyLennon from "../images/guyLennonResize.jpg"
 import skinA from "../images/skinA.jpg";
 
-class WellnessRooms extends Component {
-  componentDidMount() {
-    M.Sidenav.init(this.Sidenav);
-    M.Sidenav.getInstance(this.Sidenav);
-  }
+let sidenav;
 
-  render() {
+const WellnessRooms = () => {
+  useEffect(() => {
+    M.Sidenav.init(sidenav);
+    M.Sidenav.getInstance(sidenav);
+
+    if (window.loc !== window.location.pathname) {
+      window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "Wellness Rooms"
+      })
+  }
+  })
+
     return (
       <div id="wellnessPage">
         <div className="navContainer" id="contactNavigation">
@@ -92,7 +99,7 @@ class WellnessRooms extends Component {
 
           <ul
             ref={(Sidenav) => {
-              this.Sidenav = Sidenav;
+              sidenav = Sidenav;
             }}
             className="sidenav"
             id="mobile-demo"
@@ -306,6 +313,5 @@ Payment is made before each session. Any queries then please call me 07906 32059
       </div>
     );
   }
-}
 
 export default WellnessRooms;

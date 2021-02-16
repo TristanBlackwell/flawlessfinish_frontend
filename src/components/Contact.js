@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import M from "materialize-css";
@@ -6,23 +6,25 @@ import "materialize-css/dist/css/materialize.min.css";
 
 import icon from "../images/icon.svg";
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.submitForm = this.submitForm.bind(this);
-    this.state = {
-      status: "",
-    };
+let sidenav;
+
+const Contact = () => {
+
+  const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    M.Sidenav.init(sidenav);
+
+    M.Sidenav.getInstance(sidenav);
+
+    if (window.loc !== window.location.pathname) {
+      window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "Contact"
+      })
   }
+  })
 
-  componentDidMount() {
-    M.Sidenav.init(this.Sidenav);
-
-    M.Sidenav.getInstance(this.Sidenav);
-    this.setState({ status: "" });
-  }
-
-  submitForm(ev) {
+  function submitForm(ev) {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -33,16 +35,14 @@ class Contact extends Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        setStatus("SUCCESS");
       } else {
-        this.setState({ status: "ERROR" });
+        setStatus("ERROR");
       }
     };
     xhr.send(data);
   }
 
-  render() {
-    const { status } = this.state;
     return (
       <div id="contactPage">
         <div className="navContainer" id="contactNavigation">
@@ -113,7 +113,7 @@ class Contact extends Component {
 
           <ul
             ref={(Sidenav) => {
-              this.Sidenav = Sidenav;
+              sidenav = Sidenav;
             }}
             className="sidenav"
             id="mobile-demo"
@@ -188,7 +188,7 @@ class Contact extends Component {
             <div className="row">
               <form
                 className="col s12"
-                onSubmit={this.submitForm}
+                onSubmit={submitForm}
                 action="https://formspree.io/xnqgrpyw"
                 method="POST"
                 encType="multipart/form-data"
@@ -316,6 +316,5 @@ class Contact extends Component {
       </div>
     );
   }
-}
 
 export default Contact;

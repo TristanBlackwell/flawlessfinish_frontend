@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import M from "materialize-css";
@@ -7,6 +7,8 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
 import salonImg from "../images/salonImg.jpg";
+
+let sidenav;
 
 const slides = [
   {
@@ -29,13 +31,19 @@ const slides = [
   },
 ];
 
-class Landing extends Component {
-  componentDidMount() {
-    M.Sidenav.init(this.Sidenav);
+const Landing = () => {
+  useEffect(() => {
+    M.Sidenav.init(sidenav);
 
-    M.Sidenav.getInstance(this.Sidenav);
-  }
-  render() {
+    M.Sidenav.getInstance(sidenav);
+
+    if (window.loc !== window.location.pathname) {
+        window.gtag("config", process.env.REACT_APP_TRACKING_ID, {
+          page_title: "homepage"
+      })
+      }
+    }) 
+
     return (
       <div id="Landing">
         <div id="landingHero">
@@ -110,7 +118,7 @@ class Landing extends Component {
 
           <ul
             ref={(Sidenav) => {
-              this.Sidenav = Sidenav;
+              sidenav = Sidenav;
             }}
             className="sidenav"
             id="mobile-demo"
@@ -275,6 +283,5 @@ class Landing extends Component {
       </div>
     );
   }
-}
 
 export default Landing;

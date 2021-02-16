@@ -21,6 +21,11 @@ class App extends Component {
     AOS.init({
       duration: 500,
     });
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.text = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}; window.gtag = gtag; window.loc = window.location.pathname; gtag('js', new Date()); gtag('config', 'UA-177627430-1', { \"page_title\": \"website load\" });"
+    document.body.appendChild(script);
   }
 
   render() {
