@@ -23,7 +23,7 @@ const Privacy = () => {
          }) 
     
         return (
-            <div id="aboutPage">
+            <div id="privacyPage">
             <div className="navContainer" id="contactNavigation">
               <nav className="transparent no-shadows commonNav">
                 <div className="nav-wrapper">
@@ -150,7 +150,7 @@ const Privacy = () => {
                 </li>
               </ul>
             </div>
-            <div id="aboutHero" className="center">
+            <div className="center">
               <h1>Privacy Policy</h1>
             </div>
             <div id="privacyPolicy" className="container">
