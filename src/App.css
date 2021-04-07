@@ -1025,6 +1025,10 @@ input[type="email"]:not(.browser-default).validate + label {
   bottom: 0;
 }
 
+#contactCopyright a {
+  padding-top: 4em;
+}
+
 footer {
   font-family: "PrestigeElite";
   color: black;
@@ -1045,6 +1049,14 @@ footer ul li {
 
 .footer-copyright {
   background-color: transparent !important;
+}
+
+#privacyPolicyLink {
+  margin-left: 2em;
+}
+
+#privacyPolicyLink a {
+  color: black;
 }
 
 #successPage {
@@ -1082,6 +1094,19 @@ footer ul li {
   font-family: PrestigeElite;
   box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+
+#privacyPolicy p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#privacyPolicy ul {
+  padding-left: 1rem;
+}
+
+ul:not(.browser-default) > li {
+  list-style-type: disc;
 }
 
 @media only screen and (max-width: 900px) {
