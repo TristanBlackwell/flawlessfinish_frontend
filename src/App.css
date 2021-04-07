@@ -1105,8 +1105,12 @@ footer ul li {
   padding-left: 1rem;
 }
 
-ul:not(.browser-default) > li {
+#privacyPolicy ul:not(.browser-default) > li {
   list-style-type: disc;
+}
+
+ul:not(.browser-default) > li {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 900px) {

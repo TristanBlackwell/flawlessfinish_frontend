@@ -44,7 +44,7 @@ const Privacy = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/about" className="navbarLink aboutLink">
+                      <NavLink to="/about" className="navbarLink">
                         About us
                       </NavLink>
                     </li>
