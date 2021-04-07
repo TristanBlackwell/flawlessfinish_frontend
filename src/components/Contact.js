@@ -309,6 +309,7 @@ const Contact = () => {
               </Link>
               <div id="contactCopyright">
                 <p>© 2020 Flawless</p>
+                <Link to="/privacy">Privacy Policy</Link>
               </div>
             </div>
           </div>

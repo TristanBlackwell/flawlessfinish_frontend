@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -425,7 +425,9 @@ class Vouchers extends Component {
           </div>
           <div className="divider"></div>
           <div className="footer-copyright">
-            <div className="container black-text">© 2020 Flawless</div>
+            <div className="container black-text left">© 2020 Flawless
+              <span id="privacyPolicyLink"><Link to="/privacy">Privacy Policy</Link></span>
+            </div>
           </div>
         </footer>
       </div>

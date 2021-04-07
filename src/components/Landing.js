@@ -186,16 +186,15 @@ const Landing = () => {
             </li>
           </ul>
           <div id="landingCovidAlert">
-            <p>In line with the governments COVID-19 roadmap, we can annouce with great pleasure that the salon is due to re-open from the 12th April!
-               This is a conditional date dependent on the progress of restriction easing however is one we hope we can meet.
+            <p>In line with the governments COVID-19 roadmap, we can annouce with great pleasure that the salon will re-open on the 12th April!
                <br />
                <br />
-                Online booking will remain closed until we have complete certainity on the reopening date although provisional appointments can be booked
+                Check the services page for online booking. Alternatively appointments can be booked
                 by giving us a <a href="phone:01993 850886">call</a> or <a href="mailto: info:flawlessfinishhair.co.uk">emailing us</a>. If you were booked
                 in during the closure and have yet to be re booked then you should hear from us shortly.
               <br />
               <br />
-              We cannot wait to catch up with everyone soon along with seeing some new faces during the re-opening and look forward to opening our doors once again.
+              We cannot wait to catch up with everyone soo during the re-opening!
               <br />
               <br />
               All the best - The Flawless Team
@@ -279,7 +278,9 @@ const Landing = () => {
           </div>
           <div className="divider"></div>
           <div className="footer-copyright">
-            <div className="container black-text">© 2020 Flawless</div>
+            <div className="container black-text left">© 2020 Flawless
+              <span id="privacyPolicyLink"><Link to="/privacy">Privacy Policy</Link></span>
+            </div>
           </div>
         </footer>
       </div>

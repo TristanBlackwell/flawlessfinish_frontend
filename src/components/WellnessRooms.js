@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import M from "materialize-css";
 
 import WellnessCard from "./WellnessCard";
@@ -307,7 +307,9 @@ Payment is made before each session. Any queries then please call me 07906 32059
           </div>
           <div className="divider"></div>
           <div className="footer-copyright">
-            <div className="container black-text">© 2020 Flawless</div>
+            <div className="container black-text left">© 2020 Flawless
+              <span id="privacyPolicyLink"><Link to="/privacy">Privacy Policy</Link></span>
+            </div>
           </div>
         </footer>
       </div>
