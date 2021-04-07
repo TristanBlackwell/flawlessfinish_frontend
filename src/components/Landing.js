@@ -191,7 +191,7 @@ const Landing = () => {
                <br />
                 Check the services page for online booking. Alternatively appointments can be booked
                 by giving us a <a href="phone:01993 850886">call</a> or <a href="mailto: info:flawlessfinishhair.co.uk">emailing us</a>. If you were booked
-                in during the closure and have yet to be re booked then you should hear from us shortly.
+                in during the closure and have yet to be re booked then please check your spam or give us a call and we can get you booked in.
               <br />
               <br />
               We cannot wait to catch up with everyone soo during the re-opening!

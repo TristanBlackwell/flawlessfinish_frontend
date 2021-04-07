@@ -1167,7 +1167,8 @@ ul:not(.browser-default) > li {
   #servicesPage,
   #wellnessPage,
   #vouchersPage,
-  #contactPage {
+  #contactPage,
+  #privacyPage {
     background-size: 200%;
   }
 

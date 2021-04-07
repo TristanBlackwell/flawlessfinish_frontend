@@ -266,9 +266,7 @@ const Services = () => {
                 When you enter the building please make sure you use the
                 sanitising gel. It is now mandatory for all customers to wear a
                 facemask inside the salon unless they are exempt for medical
-                reasons. It has been advised that staff are to wear visors with
-                a mask when in close contact with customers, we are smiling
-                underneath!
+                reasons. Staff will be wearing masks also, we are smiling underneath!
               </li>
               <li>
                 If you wish to tip your stylist, you are welcome to in cash (it
@@ -324,7 +322,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="col l4 offset-l4 m6 s12">
-                <h5 className="text-darken-2">Salon hours </h5>
+                <h5 className="textyou should hear from us shortly-darken-2">Salon hours </h5>
                 <ul>
                   <li className="text-darken-2">Sun & Mon / Closed</li>
                   <li className="text-darken-2">Tue / 9AM - 5PM</li>
