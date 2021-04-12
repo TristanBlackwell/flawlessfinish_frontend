@@ -11,6 +11,7 @@ import acupuncture from "../images/Acupuncture.jpeg";
 import sars from "../images/sars.jpg";
 import guyLennon from "../images/guyLennonResize.jpg"
 import skinA from "../images/skinA.jpg";
+import Katie from "../images/Katie.jpg";
 
 let sidenav;
 
@@ -263,6 +264,43 @@ Payment is made before each session. Any queries then please call me 07906 32059
               }
               link={"http://skinaesthetik.com/"}
             />
+              <div className="wellnessCard" data-aos="fade-right">
+              <div className="row">
+                <div className="col l4 m12 s12">
+                  <img
+                    src={Katie}
+                    alt="logo"
+                    width="100%"
+                    height="auto"
+                    className="wellnessCardImg"
+                  />
+                </div>
+                {/* eslint-disable-next-line */}
+                <div className="col l8 m12 s12" className="wellnessCardText">
+                  <h3 className="wellnessCardTitle">Massage therapy & pilates</h3>
+                  <p className="wellnessCardContent">
+                  Katie is a massage therapist and Pilates instructor, trained in a number of different techniques including deep tissue massage, Swedish, sports taping and trigger point therapy.<br/>
+
+      Her experience in both of these disciplines give her a deeper understanding of how the body works and allows her to provide clients with tailor made strategies to ease pain and increase mobility.<br/>
+
+      Katie is no stranger to pain herself. A childhood injury and a complicated first birth left her with chronic back pain which affected her daily life. After experiencing first hand the benefits of a great massage therapist and Pilates, she was inspired to gain more knowledge and help others in the same way she had been given a new lease of life. <br/>
+
+      Ten years later, she has developed a practice that uses this knowledge to treat clients in a way that is specific to their needs, be it general easing of pain brought on by daily life or sports injuries and rehabilitation plans. <br/>
+                  </p>
+                  <ul>
+                    <li>Swedish massage</li>
+                    <li>Deep tissue massage</li>
+                    <li>Sports taping</li>
+                    <li>Trigger point therapy</li>
+                    <li>Lymphatic drainage massage</li>
+                    <li>MET's (muscle energy technique</li>
+                    <li>Qualified pilates instructor, including specialist populations
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           <div className="container">
             <div className="card" id="wellnessRent">
               <div className="card-content white-text">
